@@ -11,7 +11,7 @@
 <br>
 <br>
 <center><h1>Data Produk Woocommerce</h1></center>
-<br>
+<hr>
 
 <?php
 // Periksa apakah WooCommerce diaktifkan
