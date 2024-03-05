@@ -28,7 +28,7 @@ if ( class_exists( 'WooCommerce' ) ) { // kode  class_exists fungsinya memeriksa
     if ( ! empty( $products ) ) {
         // Mulai membuat tabel HTML untuk menampilkan data produk dengan Bootstrap 5
         ?>
-       <div class="table-responsive">
+    <div class="table-responsive">
        <table class="table table-bordered table-hover" style:"width:100%">
             <thead class="table-dark">
                     <tr>
