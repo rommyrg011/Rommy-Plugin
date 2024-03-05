@@ -13,6 +13,10 @@
 <center><h1>Data Produk Woocommerce</h1></center>
 <hr>
 
+<div class="notice update is-dismissible mb-3" style="margin-left: 0;">
+        <p>Ini adalah tabel dari produk WooCommerce</p>
+    </div>
+
 <?php
 // Periksa apakah WooCommerce diaktifkan
 if ( class_exists( 'WooCommerce' ) ) { // kode  class_exists fungsinya memeriksa plugin terinstall atau tidak
