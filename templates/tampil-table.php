@@ -14,7 +14,7 @@
 <hr>
 
 <div class="notice update is-dismissible mb-3" style="margin-left: 0;">
-        <p>Ini adalah tabel dari produk WooCommerce</p>
+        <p>Ini adalah tabel dari produk Woocommerce</p>
     </div>
 
 <?php
