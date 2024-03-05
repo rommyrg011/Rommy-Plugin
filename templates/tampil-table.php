@@ -10,7 +10,7 @@
 
 <br>
 <br>
-<center><h1>Menampilkan data dari produk</h1></center>
+<center><h1>Menampilkan data dari Produk Rommy Gunawan</h1></center>
 <br>
 
 <?php
