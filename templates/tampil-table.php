@@ -15,7 +15,7 @@
 
 <?php
 // Periksa apakah WooCommerce diaktifkan
-if ( class_exists( 'WooCommerce' ) ) {
+if ( class_exists( 'WooCommerce' ) ) { // kode  class_exists fungsinya memeriksa plugin terinstall atau tidak
 
     // Ambil daftar produk
     $args = array(
