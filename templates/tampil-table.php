@@ -92,7 +92,7 @@ if ( class_exists( 'WooCommerce' ) ) { // kode  class_exists fungsinya memeriksa
                 <td><?= $product_price; ?></td>
                 <td><?= $product_description; ?></td>
                 <td><?= $product_status; ?></td> 
-                <td><?= $product_date->format('Y-m-d H:i:s'); // Di tambahkan Format tanggal?></td> 
+                <td><?= $product_date->format('Y-m-d H:i:s'); // Di tambahkan Format tanggal ?></td> 
            </tr>
 
         <?php } // Selesai membuat tabel HTML / penutup ?>
