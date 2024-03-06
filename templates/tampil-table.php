@@ -16,6 +16,35 @@
 <div class="notice update is-dismissible mb-3" style="margin-left: 0;">
         <p>Ini adalah tabel dari produk Woocommerce</p>
     </div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+  Tambah
+</button>
+
+<!-- Bagian modal tambah  -->
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+      <input type="text" class="form-control" name="" placeholder="Nama Barang">
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <?php
 // Periksa apakah WooCommerce diaktifkan
@@ -32,9 +61,8 @@ if ( class_exists( 'WooCommerce' ) ) { // kode  class_exists fungsinya memeriksa
     if ( ! empty( $products ) ) {
         // Mulai membuat tabel HTML untuk menampilkan data produk dengan Bootstrap 5
         ?>
-    <div class="table-responsive">
-       <table class="table table-bordered table-hover" style:"width:100%">
-            <thead class="table-dark">
+   <table id="example" class="table table-striped" style="width:100%">
+            <thead>
                     <tr>
                         <th>Nama</th>
                         <th>Harga</th>
@@ -71,7 +99,6 @@ if ( class_exists( 'WooCommerce' ) ) { // kode  class_exists fungsinya memeriksa
 
        </tbody>
     </table>
-</div>
        <?php
     } else {
         // Jika tidak ada produk yang tersedia / error
@@ -79,4 +106,11 @@ if ( class_exists( 'WooCommerce' ) ) { // kode  class_exists fungsinya memeriksa
     }
 }
 ?>
+<script type="text/javascript">
+    $('#example').DataTable();
+</script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.datatables.net/2.0.1/js/dataTables.js"></script>
+<script src="https://cdn.datatables.net/2.0.1/js/dataTables.bootstrap5.js"></script>
 
